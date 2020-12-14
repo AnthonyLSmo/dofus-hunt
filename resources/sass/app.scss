@@ -1,0 +1,359 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+// Variables
+@import 'variables';
+
+//Icons
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Style global de l'application (both dark & light)
+
+html, body {
+    height: 100%;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+select::-webkit-scrollbar {display:none;}
+select::-moz-scrollbar {display:none;}
+select::-o-scrollbar {display:none;}
+select::-google-ms-scrollbar {display:none;}
+select::-khtml-scrollbar {display:none;}
+
+hr {
+    background-color: white;
+    width: 250px;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 8px;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h3 {
+    font-size: 15px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+option {
+    font-size: 13px;
+}
+
+option:hover {
+    background-color: #e27046;
+}
+
+.hunt-app {
+    display: block;
+}
+
+.dark-hunt-app {
+    padding: 30px 0px 30px 0px
+}
+
+// Style dark de l'application (only dark)
+.dark-app {
+    background-color: $bg-dark;
+    color: $text-dark;
+}
+
+.head-dark {
+    background-color: $secondary-dark;
+}
+
+// Style light de l'application (only light)
+.light-app {
+    background-color: $bg-light;
+    color: $text-light;
+}
+
+.head-light {
+    background-color: $headbg-light;
+}
+
+/* Style des inputs pour les positions x & y*/
+.input-hunt {
+    width: 76px;
+    height: 38px;
+    font-size: 25px;
+    text-align: center;
+    color: $text-dark;
+    background-color: $secondary-dark;
+    border: none;
+    font-family: 'Cairo', sans-serif;
+    margin: 0px 15px 0px 15px;
+}
+
+.input-hunt ::placeholder {
+    color: #454545;
+}
+
+.input-hunt:hover {
+    background-color: #303030;
+}
+
+input:focus {
+    background-color: #303030;
+}
+
+/* Style du select des indices */
+.select-hunt {
+    width: 500px;
+    height: 170px;
+    font-size: 16px;
+    background-color: $secondary-dark;
+    color: $text-dark;
+    border: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+select {
+    text-indent: 7px;
+    text-align: left;
+}
+
+/*  Style des boutons directionnels */
+.button-hunt {
+    width: 55px;
+    height: 44px;
+    font-size: 20px;
+    color: $text-dark;
+    font-family: 'Cairo', sans-serif;
+    border: none;
+    border-radius: 1px;
+}
+
+.button-hunt-selected {
+    background-color: #02a845;
+}
+
+.button-hunt-nselected {
+    background-color: #e27046;
+}
+
+.button-hunt:active {
+    background-color: #bb5d3b;
+}
+
+/* Style pour les boutons d'ajout de map via phorreur*/
+.button-phorreur {
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    color: $text-dark;
+    background-color: #048B9A;
+    //font-family: 'Cairo', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    border: none;
+}
+
+.button-phorreur:hover {
+    background-color: #05727e;
+}
+
+.button-phorreur:active {
+    background-color: #05a4b6;
+}
+
+select:focus, input:focus, button:focus {
+    outline: 0;
+}
+
+.point {
+    font-size: 25px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.hunt-title {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 55px 0px 10px 0px;
+}
+
+.hunt-link {
+    display: block;
+    margin: auto;
+    text-align: center;
+    //padding: 35px 0px 0px 0px;
+}
+
+.hunt-link a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hunt-link a:hover {
+    color: #dfdfdf;
+}
+
+.input-block {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 0px 0px 25px 0px;
+}
+
+.selection-block {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.directional-block {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 0px 0px 25px 0px;
+}
+
+.phorreur-block {
+    height: 40px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+}
+
+.btn-container {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+}
+
+/* Style de la barre de nav */
+.navbar {
+    background-color: #303030!important;
+    overflow: hidden;
+    height: 44px;
+}
+
+.p-0 > a {
+    padding: 4px 15px;
+}
+
+.p-0 > a:hover {
+    background-color: #383838;
+}
+
+.container-fluid {
+    padding: 0!important;
+}
+
+.first-link {
+    border-right: solid 1px #FFFFFF;
+    padding-right: 5px!important;
+}
+
+.other-link {
+    padding-left: 5px!important;
+}
+
+.brand-link > a:hover {
+    background-color: #303030!important;
+}
+
+///////////////////////////////////
+
+@media only screen and (max-width: 450px){
+    .select-hunt {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .select-hunt {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .select-hunt {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .select-hunt {
+        width: 250px;
+    }
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.hunt-icon {
+    font-size: 30px;
+}
+
+/* CSS de l'intarface pour entrer un nouvel indice dans la BD */
+
+.indice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #303030;
+    text-align: center;
+}
+
+.input-indice {
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto 10px auto 0;
+    text-align: center;
+    background-color: #353535;
+    font-family: 'Titillium Web', sans-serif;
+    border: none;
+    height: 40px;
+}
+
+.input-indice:focus {
+    background-color: #434343;
+}
+
+.input-indice-pos {
+    width: 115px;
+    display: inline-block;
+    margin: 0 4px 10px 4px;
+    text-align: center;
+}
+
+.input-indice-notpos {
+    width: 250px;
+}
+
+.button-validate-indice {
+    display: block;
+    margin: 0 auto 10px auto;
+    text-align: center;
+}

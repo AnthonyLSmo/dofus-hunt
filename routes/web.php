@@ -17,8 +17,4 @@ Route::get('/', function () {
     return view('hunt');
 });
 
-Route::get('/input', function(){
-    return view('indice');
-});
-
 Route::post('indice', 'IndicesController@create');

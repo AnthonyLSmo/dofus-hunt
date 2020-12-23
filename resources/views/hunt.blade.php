@@ -14,7 +14,7 @@
     <body class="dark-app">
         <div class="container-fluid navbar">
             <div class="d-flex col-6 justify-content-start">
-                <div class="p-0 brand-link" ><a href="#" class="brand-link">dofus-hunt.com</a></div>
+                <div class="p-0 brand-link" ><a href="#" class="brand-link">dofus-hunt</a></div>
             </div>
             <div class="d-flex col-6 justify-content-end">
                 <div class="p-0 first-link"><a href="#">Hunt</a></div>

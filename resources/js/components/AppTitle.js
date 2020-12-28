@@ -16,7 +16,7 @@ export default class AppTitle extends Component {
                     <a href="https://github.com/Smoyz/themes" className="hunt-icon" target='blank'>
                         <i className="fab fa-github-square"></i>
                     </a>
-                    <a href="#" className="hunt-icon">
+                    <a href="#" className="hunt-icon discord-link">
                         <i className="fab fa-discord"></i>
                     </a>
                 </div>

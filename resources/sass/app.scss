@@ -109,7 +109,7 @@ option:hover {
     background-color: $secondary-dark;
     border: none;
     font-family: 'Cairo', sans-serif;
-    margin: 0px 15px 0px 15px;
+    margin: 0px 0px 0px 0px;
 }
 
 .input-hunt ::placeholder {
@@ -122,6 +122,23 @@ option:hover {
 
 input:focus {
     background-color: #303030;
+}
+
+/* Style des boutons + et - des inputs pos */
+.btn-pos {
+    background-color: $secondary-dark;
+    color: $text-dark;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+
+.btn-pos:hover {
+    background-color: #303030;
+}
+
+.btn-pos:active {
+    background-color: #242424;
 }
 
 /* Style du select des indices */
@@ -246,6 +263,14 @@ select:focus, input:focus, button:focus {
     margin: auto;
     text-align: center;
     padding: 25px 0px 25px 0px;
+}
+
+.inputpos-container {
+    display: inline-block;
+}   
+
+.inputpos-container button {
+    display: block;
 }
 
 .btn-container {

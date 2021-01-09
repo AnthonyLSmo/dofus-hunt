@@ -70853,7 +70853,7 @@ var Hunt = /*#__PURE__*/function (_Component) {
     key: "handleSelectedItem",
     value: function () {
       var _handleSelectedItem = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(e) {
-        var tabIndSpeCA, tabIndSpePlDC, tabIndSpeCABis, xPos, yPos, direction, found, _found, result, xPosFri, yPosFri;
+        var tabIndSpeCA, tabIndSpePlDC, xPos, yPos, direction, found, _found, result, xPosFri, yPosFri;
 
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
           while (1) {
@@ -70872,19 +70872,18 @@ var Hunt = /*#__PURE__*/function (_Component) {
                 this.setState({
                   isLoading: false
                 });
-                _context2.next = 35;
+                _context2.next = 34;
                 break;
 
               case 5:
                 if (!(e != 'Sélectionnez un indice')) {
-                  _context2.next = 35;
+                  _context2.next = 34;
                   break;
                 }
 
                 _context2.prev = 6;
                 tabIndSpeCA = ['Boîte aux lettres', 'Caisse', 'Plante éventail', 'Rondin de bois', 'Souche qui ne repousse pas', 'Tronc creux couché', 'Brouette', 'Sac', 'Tombe'];
                 tabIndSpePlDC = ['Abri en toile', 'Barque', 'Barque renversée', 'Chaloupe', 'Chaloupe renversée', 'Rafiot renversé', 'Caisse explosive'];
-                tabIndSpeCABis = ['Brouette', 'Sac', 'Tombe'];
                 xPos = parseInt(this.state.x);
                 yPos = parseInt(this.state.y);
                 direction = this.state.buttonDirect; //Gestion du cas unique lié à la map [3;-7] direction up
@@ -70947,10 +70946,10 @@ var Hunt = /*#__PURE__*/function (_Component) {
                   yPos = -38;
                 }
 
-                _context2.next = 23;
+                _context2.next = 22;
                 return axios__WEBPACK_IMPORTED_MODULE_6___default.a.get('/api/' + e + '/pos?' + 'direction=' + direction + '&x=' + xPos + '&y=' + yPos);
 
-              case 23:
+              case 22:
                 result = _context2.sent;
                 xPos = result.data.map(function (x) {
                   return x.x_indice;
@@ -70991,11 +70990,11 @@ var Hunt = /*#__PURE__*/function (_Component) {
                   showConfirmButton: false,
                   title: '[ ' + xPos.toString() + ' ; ' + yPos.toString() + ' ]'
                 });
-                _context2.next = 34;
+                _context2.next = 33;
                 break;
 
-              case 30:
-                _context2.prev = 30;
+              case 29:
+                _context2.prev = 29;
                 _context2.t0 = _context2["catch"](6);
                 this.setState({
                   error: _context2.t0,
@@ -71011,19 +71010,19 @@ var Hunt = /*#__PURE__*/function (_Component) {
                   title: 'Une erreur est survenue...'
                 });
 
-              case 34:
+              case 33:
                 this.setState({
                   listIndice: [],
                   buttonDirect: 'null',
                   indiceFound: []
                 });
 
-              case 35:
+              case 34:
               case "end":
                 return _context2.stop();
             }
           }
-        }, _callee2, this, [[6, 30]]);
+        }, _callee2, this, [[6, 29]]);
       }));
 
       function handleSelectedItem(_x2) {
@@ -71218,13 +71217,13 @@ var InputPos = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inputpos-container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "number",
         className: "input-hunt",
         placeholder: this.props.value,
         value: this.props.value,
         onChange: this.handleChange
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "btn-pos",
         name: "btnPlus",
         onClick: this.handleClickIncr
@@ -71232,7 +71231,7 @@ var InputPos = /*#__PURE__*/function (_Component) {
         className: "btn-pos",
         name: "btnMinus",
         onClick: this.handleClickIncr
-      }, "-"));
+      }, "-")));
     }
   }]);
 

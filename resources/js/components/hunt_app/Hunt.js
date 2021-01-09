@@ -90,7 +90,6 @@ export default class Hunt extends Component {
             try {
                 const tabIndSpeCA    = ['Boîte aux lettres', 'Caisse', 'Plante éventail', 'Rondin de bois', 'Souche qui ne repousse pas', 'Tronc creux couché', 'Brouette', 'Sac', 'Tombe'];
                 const tabIndSpePlDC  = ['Abri en toile', 'Barque', 'Barque renversée', 'Chaloupe', 'Chaloupe renversée', 'Rafiot renversé', 'Caisse explosive'];
-                const tabIndSpeCABis = ['Brouette', 'Sac', 'Tombe'];
                 let xPos = parseInt(this.state.x);
                 let yPos = parseInt(this.state.y);
                 let direction = this.state.buttonDirect;

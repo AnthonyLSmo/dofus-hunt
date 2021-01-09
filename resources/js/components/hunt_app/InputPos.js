@@ -27,27 +27,31 @@ export default class InputPos extends Component {
     render(){   
         return(
             <div className="inputpos-container">
-                <input
-                    type="number"
-                    className="input-hunt"
-                    placeholder={this.props.value}
-                    value={this.props.value}
-                    onChange={this.handleChange}
-                />
-                <button
-                    className="btn-pos"
-                    name="btnPlus"
-                    onClick={this.handleClickIncr}
-                >
-                    +
-                </button>
-                <button
-                    className="btn-pos"
-                    name="btnMinus"
-                    onClick={this.handleClickIncr}
-                >
-                    -
-                </button>
+                <div>
+                    <input
+                        type="number"
+                        className="input-hunt"
+                        placeholder={this.props.value}
+                        value={this.props.value}
+                        onChange={this.handleChange}
+                    />
+                </div>
+                <div>
+                    <button
+                        className="btn-pos"
+                        name="btnPlus"
+                        onClick={this.handleClickIncr}
+                    >
+                        +
+                    </button>
+                    <button
+                        className="btn-pos"
+                        name="btnMinus"
+                        onClick={this.handleClickIncr}
+                    >
+                        -
+                    </button>
+                </div>
             </div>
         );
     }

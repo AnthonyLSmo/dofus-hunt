@@ -36,7 +36,7 @@ export default class InputPos extends Component {
                         onChange={this.handleChange}
                     />
                 </div>
-                <div>
+                <div className="btnpos-container">
                     <button
                         className="btn-pos"
                         name="btnPlus"

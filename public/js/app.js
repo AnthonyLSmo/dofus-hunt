@@ -71223,7 +71223,9 @@ var InputPos = /*#__PURE__*/function (_Component) {
         placeholder: this.props.value,
         value: this.props.value,
         onChange: this.handleChange
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "btnpos-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "btn-pos",
         name: "btnPlus",
         onClick: this.handleClickIncr

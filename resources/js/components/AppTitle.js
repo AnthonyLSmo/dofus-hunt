@@ -5,10 +5,6 @@ export default class AppTitle extends Component {
         super(props);
     }
 
-    /* <a href="http://www.twitter.com/Smoyzi" className="hunt-icon" target='blank'>
-                        <i className="fab fa-twitter-square"></i>
-                    </a> */
-
     render(){
         return(
             <div>
@@ -19,6 +15,9 @@ export default class AppTitle extends Component {
                     </a>
                     <a href="#" className="hunt-icon discord-link">
                         <i className="fab fa-discord"></i>
+                    </a>
+                    <a href="http://www.twitter.com/Smoyzi" className="hunt-icon" target='blank'>
+                        <i className="fab fa-twitter-square"></i>
                     </a>
                 </div>
                 <hr/>

@@ -6,6 +6,7 @@ import ButtonList from './ButtonList';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content'
+import SearchResult from './SearchResult';
 
 const toastPos = withReactContent(Swal);
 
@@ -19,11 +20,12 @@ export default class Hunt extends Component {
       this.handlePhorreurButton = this.handlePhorreurButton.bind(this);
       this.state = {
         buttonDirect: 'null',
+        previousDirection: 'null',
         x: "0",
         y: "0",
         listIndice: [],
         indiceFound: [],
-        selectedIndice: '',
+        selectedIndice: 'null',
         error: null,
         isLoading: false,
         buttonList: false
@@ -80,7 +82,8 @@ export default class Hunt extends Component {
     async handleSelectedItem(e){
         this.setState({
             selectedIndice: e,
-            isLoading: true
+            isLoading: true,
+            previousDirection: this.state.buttonDirect
         });
         if(e == 'Phorreur'){
             this.setState({
@@ -304,6 +307,14 @@ export default class Hunt extends Component {
                     >
                         
                     </SelectIndice>
+                </div>
+                <div className="result-block">
+                    <SearchResult
+                        indice={this.state.selectedIndice}
+                        xPos={this.state.x}
+                        yPos={this.state.y}
+                        direction={this.state.previousDirection}
+                    />
                 </div>
                 <ButtonList
                     indice={this.state.selectedIndice}

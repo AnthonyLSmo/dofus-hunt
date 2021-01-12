@@ -247,7 +247,9 @@ select:focus, input:focus, button:focus {
 }
 
 .selection-block {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: auto;
     text-align: center;
     padding: 0px 0px 0px 0px;
@@ -266,6 +268,13 @@ select:focus, input:focus, button:focus {
     margin: auto;
     text-align: center;
     padding: 25px 0px 25px 0px;
+}
+
+.result-block {
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .inputpos-container {
@@ -292,11 +301,28 @@ select:focus, input:focus, button:focus {
     margin: 0px 10px 0px 10px;
 }
 
+.result-container {
+    width: 500px;
+    background-color: #262626;
+    color: $text-dark;
+    font-family: 'Titillium Web', sans-serif;
+    box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.20), 0 -5px 10px -5px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.result-container div {
+    margin: 0px 5px;
+}
+
 /* Style de la barre de nav */
 .navbar {
     background-color: #303030!important;
     overflow: hidden;
     height: 44px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.12), 0 2px 10px 0 rgba(0,0,0,0.08);
 }
 
 .p-0 > a {
@@ -330,11 +356,17 @@ select:focus, input:focus, button:focus {
     .select-hunt {
         width: 400px;
     }
+    .result-container {
+        width: 400px;
+    }
 }
 
 @media only screen and (max-width: 400px){
     .select-hunt {
         width: 350px;
+    }
+    .result-container {
+        width: 400px;
     }
 }
 
@@ -342,10 +374,16 @@ select:focus, input:focus, button:focus {
     .select-hunt {
         width: 300px;
     }
+    .result-container {
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width: 300px){
     .select-hunt {
+        width: 250px;
+    }
+    .result-container {
         width: 250px;
     }
 }

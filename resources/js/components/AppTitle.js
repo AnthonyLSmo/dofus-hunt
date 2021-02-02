@@ -5,14 +5,18 @@ export default class AppTitle extends Component {
         super(props);
     }
 
+
+    /*
+        <a href="https://github.com/Smoyz/themes" className="hunt-icon" target='blank'>
+            <i className="fab fa-github-square"></i>
+        </a>
+    */
+
     render(){
         return(
             <div>
                 <div className="hunt-title"><h1>Chasse au trésor</h1></div>
                 <div className="hunt-link">
-                    <a href="https://github.com/Smoyz/themes" className="hunt-icon" target='blank'>
-                        <i className="fab fa-github-square"></i>
-                    </a>
                     <a href="#" className="hunt-icon discord-link">
                         <i className="fab fa-discord"></i>
                     </a>

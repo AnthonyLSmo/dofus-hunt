@@ -28,10 +28,9 @@ export default class SearchResult extends Component {
     render(){
         return (
             <div className="result-container">
-                <div>{this.renderDirection()}</div>
+                <div className="result-direction">{this.renderDirection()}</div>
                 <div>{this.renderResult()}</div>
             </div>
         )
     }
-
 }

@@ -34,6 +34,7 @@ export default class InputPos extends Component {
                         placeholder={this.props.value}
                         value={this.props.value}
                         onChange={this.handleChange}
+                        tabindex={this.props.tabIndex}
                     />
                 </div>
                 <div className="btnpos-container">

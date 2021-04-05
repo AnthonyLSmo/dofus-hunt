@@ -17,6 +17,10 @@ Route::get('/hunt', function () {
     return view('hunt');
 });
 
+Route::get('/themes', function(){
+    return view('hunt');
+});
+
 Route::get('/input', function() {
     return view('indice');
 });

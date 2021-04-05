@@ -33,3 +33,4 @@ class CreateIndicesTable extends Migration
         Schema::dropIfExists('indices');
     }
 }
+

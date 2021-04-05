@@ -14,8 +14,8 @@ export default class Navbar extends Component {
                     </div>
                 </div>
                 <div className="d-flex col-6 justify-content-end">
-                    <div className="p-0 first-link"><a href="#">Hunt</a></div>
-                    <div className="p-0 other-link"><a href="#soon">Thèmes</a></div>
+                    <div className="p-0 first-link"><a href="/hunt">Hunt</a></div>
+                    <div className="p-0 other-link"><a href="/themes">Thèmes</a></div>
                 </div> 
             </div>
             

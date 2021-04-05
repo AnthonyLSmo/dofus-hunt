@@ -266,6 +266,7 @@ export default class Hunt extends Component {
                         pos="x"
                         value={this.state.x}
                         onXposChange={this.handleXpos}
+                        tabIndex="1"
                     />
                     <span className="point">
                         ;
@@ -274,6 +275,7 @@ export default class Hunt extends Component {
                         pos="y"
                         value={this.state.y}
                         onYposChange={this.handleYpos}
+                        tabIndex="2"
                     />
                 </div>
                 <div className="directional-block">

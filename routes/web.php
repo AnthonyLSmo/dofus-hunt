@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return redirect('/hunt');
+});
+
 Route::get('/hunt', function () {
     return view('hunt');
 });

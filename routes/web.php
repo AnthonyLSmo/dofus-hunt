@@ -22,7 +22,7 @@ Route::get('/hunt', function () {
 });
 
 Route::get('/themes', function(){
-    return view('hunt');
+    return redirect('/hunt');
 });
 
 Route::get('/input', function() {

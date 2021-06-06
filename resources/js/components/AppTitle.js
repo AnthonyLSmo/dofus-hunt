@@ -10,13 +10,7 @@ export default class AppTitle extends Component {
         <a href="https://github.com/Smoyz/themes" className="hunt-icon" target='blank'>
             <i className="fab fa-github-square"></i>
         </a>
-    */
-
-    render(){
-        return(
-            <div>
-                <div className="hunt-title"><h1>Chasse au trésor</h1></div>
-                <div className="hunt-link">
+        <div className="hunt-link">
                     <a href="#" className="hunt-icon discord-link">
                         <i className="fab fa-discord"></i>
                     </a>
@@ -24,6 +18,12 @@ export default class AppTitle extends Component {
                         <i className="fab fa-twitter-square"></i>
                     </a>
                 </div>
+    */
+
+    render(){
+        return(
+            <div>
+                <div className="hunt-title"><h1>Chasse au trésor</h1></div>
                 <hr/>
             </div>
         )

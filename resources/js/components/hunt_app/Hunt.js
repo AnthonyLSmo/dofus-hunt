@@ -134,12 +134,12 @@ export default class Hunt extends Component {
                 //Gestion du cas unique lié à la map [-33;-15] direction left
                 if(xPos == -33 && yPos == -15 && direction == "left"){
                     xPos = -33;
-                    yPos = -16
+                    yPos = -16;
                 }
                 //Gestion du cas unique lié à la map [-81;-37] direction right
                 if(xPos == -81 && yPos == -37 && direction == "right"){
                     xPos = -81;
-                    yPos = -38
+                    yPos = -38;
                 }
                 const result = await axios.get('/api/' + e + '/pos?' + 'direction=' + direction + '&x=' + xPos + '&y=' + yPos);
                 xPos = result.data.map(x => x.x_indice)[0];
